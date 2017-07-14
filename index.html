@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>小小心刺客-我的作品集</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <!-- <link href="https://cdn.bootcss.com/normalize/7.0.0/normalize.css" rel="stylesheet"> -->
+</head>
+
+<body>
+    <!--header开始-->
+    <header>
+        <div class="top-warp">
+            <!--logo 名字-->
+            <div class="brand">
+                <div class="logo">
+                    <img src="image/xlogo.jpg" class="logo-img" alt="logo" />
+                </div>
+                <div class="name">
+                    <h1 class="title-name">小小心刺客</h1>
+                    <h3 class="title-works">WEB前端忍者</h3>
+                </div>
+            </div>
+
+            <!-- 导航栏 -->
+            <nav class="nav-bar">
+                <ul>
+                    <li><a href="#" class="this">首页</a></li>
+                    <li><a href="#">作品</a></li>
+                    <li><a href="#">博客</a></li>
+                    <li><a href="#">联系</a></li>
+                </ul>
+            </nav>
+
+            <!-- 汉堡图标 -->
+            <a id="menu" class="header__menu">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
+              </svg>
+            </a>
+        </div>
+    </header>
+    <!-- header结束 -->
+
+    <!-- banner开始 -->
+    <div class="banner">
+        <picture>
+            <source media="(max-width:640px)" srcset="image/banner-medium.jpg">
+            <source media="(min-width:641px)" srcset="image/banner.jpg">
+            <img src="image/banner.jpg" class="banner-img" alt="banner">
+        </picture>
+    </div>
+    <!-- banner结束 -->
+
+
+    <!-- 主题内容开始 -->
+    <main>
+        <div class="container">
+            <p class="works-text">作品展示：</p>
+            <section class="portfolio-item">
+                <a href="#" class="item-warp">
+                    <picture>
+                        <source media="(max-width:640px)" srcset="image/works1-medium.jpg">
+                        <source media="(min-width:641px)" srcset="image/works1-large.jpg">
+                        <img src="image/works1-medium.jpg" alt="works1" />
+                    </picture>
+                    <h2 class="show-title">appify</h2>
+                    <a href="#">http://github.com</a>
+                </a>
+            </section>
+            <section class="portfolio-item">
+                <a href="#" class="item-warp">
+                    <picture>
+                        <source media="(max-width:640px)" srcset="image/works2-medium.jpg">
+                        <source media="(min-width:641px)" srcset="image/works2-large.jpg">
+                        <img src="image/works2-large.jpg" alt="works2" />
+                    </picture>
+                    <h2 class="show-title">appify</h2>
+                    <a href="#">http://github.com</a>
+                </a>
+            </section>
+            <section class="portfolio-item">
+                <a href="#" class="item-warp">
+                    <picture>
+                        <source media="(max-width:640px)" srcset="image/works3-medium.jpg">
+                        <source media="(min-width:641px)" srcset="image/works3-large.jpg">
+                        <img src="image/works3-large.jpg" alt="works3" />
+                    </picture>
+                    <h2 class="show-title">appify</h2>
+                    <a href="#">http://github.com</a>
+                </a>
+            </section>
+            <section class="portfolio-item">
+                <a href="#" class="item-warp">
+                    <picture>
+                        <source media="(max-width:640px)" srcset="image/works4-medium.jpg">
+                        <source media="(min-width:641px)" srcset="image/works4-large.jpg">
+                        <img src="image/works4.jpg" alt="works4" />
+                    </picture>
+                    <h2 class="show-title">appify</h2>
+                    <a href="#">http://github.com</a>
+                </a>
+            </section>
+            <section class="portfolio-item">
+                <a href="#" class="item-wrap">
+                    <picture>
+                        <source media="(max-width:640px)" srcset="image/works5-medium.jpg">
+                        <source media="(min-width:641px)" srcset="image/works5-large.jpg">
+                        <img src="image/works5-medium.jpg" alt="works5" />
+                    </picture>
+                    <h2 class="show-title">appify</h2>
+                    <a href="#">http://github.com</a>
+                </a>
+            </section>
+            <section class="portfolio-item">
+                <a href="#" class="item-warp">
+                    <picture>
+                        <source media="(max-width:640px)" srcset="image/works6-medium.jpg">
+                        <source media="(min-width:641px)" srcset="image/works6-large.jpg">
+                        <img src="image/works6-medium.jpg" alt="works6" />
+                    </picture>
+                    <h2 class="show-title">appify</h2>
+                    <a href="#">http://github.com</a>
+                </a>
+            </section>
+        </div>
+    </main>
+
+    <!-- 主体结束 -->
+
+    <!-- footer版权 -->
+    <footer>
+        <p class="copyright">©2017小小心刺客 All Rights Reserved</p>
+        <p>
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" />
+            </a>
+        </p>
+
+    </footer>
+
+    <script type="text/javascript">
+        /*
+         * 点击菜单时，打开隐藏溢出的导航，其中open为js添加的，绑定事件。
+         */
+        var menu = document.querySelector('#menu');
+        var main = document.querySelector('main');
+        var banner = document.querySelector('.banner');
+        var drawer = document.querySelector('.nav-bar');
+
+        menu.addEventListener('click', function(e) {
+            drawer.classList.toggle('open');
+            e.stopPropagation();
+        });
+        main.addEventListener('click', function() {
+            drawer.classList.remove('open');
+        });
+        banner.addEventListener('click', function() {
+            drawer.classList.remove('open');
+        });
+    </script>
+
+</body>
+
+</html>
